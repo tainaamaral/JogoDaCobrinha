@@ -30,7 +30,9 @@ Certifique-se de ter o [Python](https://www.python.org/downloads/) instalado na 
      pip install pygame-ce
      ```
 5. Inicie o jogo executando o arquivo principal:
+   ```
    python main.py
+   ```
 
 ### 🎮 Controles
 Setas do Teclado (⬆️ ⬇️ ⬅️ ➡️): Controlam a direção da cobrinha.
@@ -43,6 +45,7 @@ Qualquer Tecla: Inicia a partida na tela inicial.
 
 ### 🛠️ Tecnologias Utilizadas
 **Python 3**
+
 **Pygame (Biblioteca principal para renderização gráfica e eventos)**
 
 Desenvolvido com dedicação e muito código! 💻
