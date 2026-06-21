@@ -13,7 +13,20 @@ direcao = (10, 0)
 comida = (300, 200)
 
 pontos = 0
-velocidade_jogo = 10  # Velocidade fixa e mais confortável
+velocidade_jogo = 10
+
+
+def mostrar_tela_inicio():
+    esperando = True
+    while esperando:
+        tela.fill((0, 0, 0))
+
+        texto_titulo = fonte_titulo.render("JOGO DA COBRINHA", True, (0, 255, 0))
+        texto_instrucao = fonte.render("Pressione qualquer tecla para jogar", True, (255, 255, 255))
+
+        # Centraliza os textos na tela
+        tela.blit(texto_titulo, (600 // 2 - texto_titulo.get_width() // 2, 130))
+        tela.blit(texto_instrucao, (600 // 2 - texto_instrucao.get_width() // 2, 220))
 
 def desenhar():
     tela.fill((0,0,0))
