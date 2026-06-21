@@ -37,6 +37,33 @@ def mostrar_tela_inicio():
             if evento.type == pygame.KEYDOWN:
                 esperando = False
 
+
+def mostrar_tela_game_over(pontuacao_final):
+    esperando = True
+    while esperando:
+        tela.fill((0, 0, 0))
+
+        texto_game_over = fonte_titulo.render("VOCÊ PERDEU!", True, (255, 0, 0))
+        texto_pontos = fonte.render(f"Pontuação Final: {pontuacao_final}", True, (255, 255, 255))
+        texto_reiniciar = fonte.render("Pressione R para Jogar Novamente ou Q para Sair", True, (200, 200, 200))
+
+        # Centraliza os textos na tela de Game Over
+        tela.blit(texto_game_over, (600 // 2 - texto_game_over.get_width() // 2, 100))
+        tela.blit(texto_pontos, (600 // 2 - texto_pontos.get_width() // 2, 180))
+        tela.blit(texto_reiniciar, (600 // 2 - texto_reiniciar.get_width() // 2, 260))
+
+        pygame.display.update()
+
+        for evento in pygame.event.get():
+            if evento.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+            if evento.type == pygame.KEYDOWN:
+                if evento.key == pygame.K_r:
+                    return True  # Retorna True se o jogador quiser reiniciar
+                if evento.key == pygame.K_q:
+                    return False
+                
 def desenhar(pontuacao):
     tela.fill((0, 0, 0))
 
