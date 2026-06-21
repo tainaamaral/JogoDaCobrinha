@@ -6,7 +6,8 @@ Um jogo clássico da cobrinha desenvolvido inteiramente em Python utilizando a b
 
 * **Gameplay Clássica:** Movimentação em grade com crescimento da cobra ao comer a maçã.
 * **Sistema de Pontuação:** Placar atualizado em tempo real na tela.
-* **Telas de Interface:** * Tela Inicial para aguardar o jogador começar.
+* **Telas de Interface:**
+  * Tela Inicial para aguardar o jogador começar.
   * Tela de *Game Over* informando a pontuação final.
 * **Sistema de Reinício:** Opção de jogar novamente apertando `R` sem precisar reabrir o programa.
 * **Prevenção de Bugs:** Bloqueio de "marcha ré" (impedir que a cobra vire 180 graus de uma vez e colida com o próprio pescoço).
