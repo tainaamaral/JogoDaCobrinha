@@ -68,9 +68,7 @@ while rodando:
     if nova_cabeca[0] < 0 or nova_cabeca[0] >= 600:
         rodando = False
 
-    if nova_cabeca[1] < 0 or nova_cabeca[1] >= 400:
-        rodando = False
-
+    # Passa a variável pontos para a função desenhar
     desenhar(pontos)
     relogio.tick(velocidade_jogo)
 
