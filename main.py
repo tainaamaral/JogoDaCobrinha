@@ -4,7 +4,7 @@ import random
 pygame.init()
 pygame.font.init()
 fonte = pygame.font.SysFont("arial", 25, bold=True)
-
+fonte_titulo = pygame.font.SysFont("arial", 40, bold=True)
 tela = pygame.display.set_mode((600, 400))
 pygame.display.set_caption("Jogo da Cobrinha")
 
