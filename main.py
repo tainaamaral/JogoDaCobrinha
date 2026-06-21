@@ -23,6 +23,9 @@ def desenhar():
 
     pygame.draw.circle(tela, (255, 0, 0), (comida[0] + 5, comida[1] + 5), 5)
 
+    texto_placar = fonte.render(f"Pontos: {pontuacao}", True, (255, 255, 255))
+    tela.blit(texto_placar, (10, 10))
+    
     pygame.display.update()
 
 rodando = True
