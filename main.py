@@ -28,8 +28,17 @@ def mostrar_tela_inicio():
         tela.blit(texto_titulo, (600 // 2 - texto_titulo.get_width() // 2, 130))
         tela.blit(texto_instrucao, (600 // 2 - texto_instrucao.get_width() // 2, 220))
 
-def desenhar():
-    tela.fill((0,0,0))
+        pygame.display.update()
+
+        for evento in pygame.event.get():
+            if evento.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+            if evento.type == pygame.KEYDOWN:
+                esperando = False
+
+def desenhar(pontuacao):
+    tela.fill((0, 0, 0))
 
     for parte in cobra:
         pygame.draw.rect(tela, (0, 55, 0), (*parte, 10, 10))
