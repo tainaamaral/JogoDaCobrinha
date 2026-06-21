@@ -12,6 +12,8 @@ cobra = [(100, 50)]
 direcao = (10, 0)
 comida = (300, 200)
 
+pontos = 0
+velocidade_jogo = 15
 
 def desenhar():
     tela.fill((0,0,0))
