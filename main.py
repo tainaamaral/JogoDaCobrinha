@@ -14,6 +14,7 @@ comida = (300, 200)
 
 pontos = 0
 velocidade_jogo = 15
+tamanho_bloco = 20
 
 def desenhar():
     tela.fill((0,0,0))
