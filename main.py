@@ -67,8 +67,8 @@ while rodando:
     if nova_cabeca[1] < 0 or nova_cabeca[1] >= 400:
         rodando = False
 
-    desenhar()
-    relogio.tick(15)
+    desenhar(pontos)
+    relogio.tick(velocidade_jogo)
 
 pygame.quit()
 
