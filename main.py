@@ -22,6 +22,9 @@ def desenhar():
     for parte in cobra:
         pygame.draw.rect(tela, (0, 55, 0), (*parte, 10, 10))
 
+    centro_x = comida[0] + tamanho_bloco // 2
+    centro_y = comida[1] + tamanho_bloco // 2
+    raio = tamanho_bloco // 2
     pygame.draw.circle(tela, (255, 0, 0), (comida[0] + 5, comida[1] + 5), 5)
 
     texto_placar = fonte.render(f"Pontos: {pontuacao}", True, (255, 255, 255))
